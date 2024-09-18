@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirata vs Marinaio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="corpo">
+    <div id="logocontainer">
+        <img src="photo/logopirati.png" id="logo">
+        <img src="photo/sciabola.png" id="imgsciabola">
+        <img src="photo/cappello.png" id="imgcappello">
+    </div>
+    <div id="turnicon"></div>
+    <div id="turn">Turn:</div>
+    <table id="matrix-table"></table>
+    <div id="btn-container">
+    <div id="button-container1">
+        <button class="invisible-button" onclick="clickBTN(0)"></button>
+        <button class="invisible-button" onclick="clickBTN(1)"></button>
+        <button class="invisible-button" onclick="clickBTN(2)"></button>
+    </div>
+    <div id="button-container2">
+        <button class="invisible-button" onclick="clickBTN(3)"></button>
+        <button class="invisible-button" onclick="clickBTN(4)"></button>
+        <button class="invisible-button" onclick="clickBTN(5)"></button>
+    </div>
+        <div id="button-container3">
+        <button class="invisible-button" onclick="clickBTN(6)"></button>
+        <button class="invisible-button" onclick="clickBTN(7)"></button>
+        <button class="invisible-button" onclick="clickBTN(8)"></button>
+    </div>
+</div>
+<button class="button-82-pushable" role="button" onclick="resetG()">
+    <span class="button-82-shadow"></span>
+    <span class="button-82-edge"></span>
+    <span class="button-82-front text">
+      Reset
+    </span>
+  </button>
+    <script src="script.js"></script>
+</body>
+
+</html>
