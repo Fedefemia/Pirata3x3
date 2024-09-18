@@ -107,7 +107,14 @@ function checkRows() {
     return false;
 }
 function triggerWin(winner){
+    let winHMTL;
     let bodyhtml = document.getElementById('corpo');
-    let winHMTL = '<div id="winTOT">The winner is: ' + winner + '</div>';
+    if(winner == "M"){
+        winHMTL = '<div id="winTOTbck"></div><div id="winTOT"><div id="testoWIN">Hanno vinto i Marinai</div></div>';
+    }
+    else{
+        winHMTL = '<div id="winTOTbck"></div><div id="winTOT"><div id="testoWIN">Ha vinto il Capitano</div></div>';
+    }
+    
     bodyhtml.innerHTML += winHMTL;
-}
+}1
